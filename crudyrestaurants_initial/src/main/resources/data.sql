@@ -45,3 +45,10 @@ The number must be larger than the last used id.
  */
 
 alter sequence hibernate_sequence restart with 15;
+
+/*
+To use SeedData.java (Java version of creating seed data),
+in application.properties set spring.datasource.initialization-mode to never.
+To use data.sql (use SQL to create dummy data) comment out @Component on top of SeedData class
+and set set spring.datasource.initialization-mode to always.
+*/
